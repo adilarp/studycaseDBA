@@ -41,4 +41,61 @@ from tb_harga
 inner join tb_bunga on tb_harga.id_bunga = tb_bunga.id_bunga
 inner join tb_satuan on tb_harga.id_satuan = tb_satuan.id_satuan;
 
+insert into tb_stok (id_stok, id_bunga, id_satuan, stock)
+values ('1','4','3','10');
+
+insert into tb_stok (id_stok, id_bunga, id_satuan, stock)
+values ('2','2','1','5');
+
+insert into tb_stok (id_stok, id_bunga, id_satuan, stock)
+values ('3','3','2','20');
+
+insert into tb_stok (id_stok, id_bunga, id_satuan, stock)
+values ('4','2','2','50');
+
+insert into tb_stok (id_stok, id_bunga, id_satuan, stock)
+values ('5','1','1','50');
+
+use db_bunga;
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('1','1','2','2','10','150000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('2','2','1','1','2','60000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('3','2','2','2','5','75000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('4','3','4','3','2','60000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('5','4','2','1','1','150000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('6','4','4','3','1','300000');
+
+insert into tb_keranjang (id_keranjang, trx_id, id_bunga, id_satuan, jumlah, amount)
+values ('7','5','1','1','5','150000');
+
+
+insert into tb_transaksi (trx_id, tanggal_order, status, total_amount)
+values ('1','2018-09-29 10:31:01','sukses','150000');
+
+insert into tb_transaksi (trx_id, tanggal_order, status, total_amount)
+values ('2','2018-09-29 15:28:05','sukses','135000');
+
+insert into tb_transaksi (trx_id, tanggal_order, status, total_amount)
+values ('3','2018-09-30 07:15:25','proses','600000');
+
+insert into tb_transaksi (trx_id, tanggal_order, status, total_amount)
+values ('4','2018-09-30 12:30:45','sukses','450000');
+
+insert into tb_transaksi (trx_id, tanggal_order, status, total_amount)
+values ('5','2018-09-30 14:23:23','sukses','150000');
+
+
+
+
 
